@@ -33,7 +33,7 @@ class DBase3 extends Format {
      */
     public function supportsType($type) {
         return in_array($type, array(Field::TYPE_CHARACTER, Field::TYPE_DATE,
-            Field::TYPE_LOGICAL, Field::TYPE_MEMO, Field::TYPE_NUMERIC));
+            Field::TYPE_LOGICAL, Field::TYPE_MEMO, Field::TYPE_NUMERIC,Field::TYPE_TIME,Field::TYPE_INTEGER));
     }
 
     /**
