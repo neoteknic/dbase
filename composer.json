@@ -1,9 +1,9 @@
 {
-    "name": "org.majkel/dbase",
+    "name": "neoteknic/dbase",
     "description": "Library to access dbase / xbase / dbf database files",
     "type": "library",
     "keywords": ["dbase", "xbase", "dbf"],
-    "homepage": "https://github.com/majkel89",
+    "homepage": "https://github.com/neoteknic/dbase",
     "license": "MIT",
     "authors": [
         {
