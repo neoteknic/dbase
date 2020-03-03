@@ -20,10 +20,11 @@ abstract class Field {
     const TYPE_CHARACTER = 'C';
     const TYPE_LOGICAL = 'L';
     const TYPE_DATE = 'D';
-    const TYPE_TIME = 'T';
+    const TYPE_TIMESTAMP = 'T';
     const TYPE_NUMERIC = 'N';
     const TYPE_MEMO = 'M';
     const TYPE_INTEGER='I';
+	const TYPE_MONEY='Y';
 
     const MAX_NAME_LENGTH = 10;
 
