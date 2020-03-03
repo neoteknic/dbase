@@ -20,8 +20,10 @@ abstract class Field {
     const TYPE_CHARACTER = 'C';
     const TYPE_LOGICAL = 'L';
     const TYPE_DATE = 'D';
+    const TYPE_TIME = 'T';
     const TYPE_NUMERIC = 'N';
     const TYPE_MEMO = 'M';
+    const TYPE_INTEGER='I';
 
     const MAX_NAME_LENGTH = 10;
 
@@ -240,6 +242,7 @@ abstract class Field {
     public static function create($type) {
         switch ($type) {
             case Field::TYPE_CHARACTER:
+            case Field::TYPE_TIME:
                 return new field\CharacterField;
             case Field::TYPE_DATE:
                 return new field\DateField;
@@ -248,6 +251,7 @@ abstract class Field {
             case Field::TYPE_MEMO:
                 return new field\MemoField;
             case Field::TYPE_NUMERIC:
+            case Field::TYPE_INTEGER:
                 return new field\NumericField;
             default:
                 throw new Exception("Unsupported field `$type`");
