@@ -253,8 +253,9 @@ abstract class Field {
             case Field::TYPE_MEMO:
                 return new field\MemoField;
             case Field::TYPE_NUMERIC:
+	            return new field\NumericField;
             case Field::TYPE_INTEGER:
-                return new field\NumericField;
+                return new field\IntegerField;
             default:
                 throw new Exception("Unsupported field `$type`");
         }
