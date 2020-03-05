@@ -243,7 +243,7 @@ abstract class Field {
     public static function create($type) {
         switch ($type) {
             case Field::TYPE_CHARACTER:
-            case Field::TYPE_TIME:
+            case Field::TYPE_TIMESTAMP:
                 return new field\CharacterField;
             case Field::TYPE_DATE:
                 return new field\DateField;
